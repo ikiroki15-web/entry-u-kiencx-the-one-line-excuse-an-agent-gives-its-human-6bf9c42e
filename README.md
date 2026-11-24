@@ -11,7 +11,9 @@ node main.ts
 ```
 
 This writes the excuse to `/output/entry.txt` (override with the `OUTPUT_PATH`
-environment variable).
+environment variable). Before writing, the program validates that the excuse
+is exactly one line, 1–160 characters, and not blank, and exits with an error
+without writing anything if it is not.
 
 ## The excuse
 
